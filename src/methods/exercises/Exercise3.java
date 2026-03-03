@@ -12,8 +12,7 @@ package methods.exercises;
  * 4. Test everything in main().
  */
 
-public class Exercise3
-{
+public class Exercise3 {
     public static void main(String[] args)
     {
         Calculator calc = new Calculator();
@@ -31,34 +30,49 @@ public class Exercise3
     }
 }
 
-class Calculator
-{
+class Calculator {
     // Example: add methods
-    public int add(int a, int b)
-    {
+    public int add(int a, int b) {
         return a + b;
     }
 
     // TODO: Write multiply(int a, int b)
-
-    // TODO: Write multiply(double a, double b)
-}
-
-class Animal
-{
-    public void sound()
-    {
-        System.out.println("Animal makes a sound");
+    public int multiply(int a, int b) {
+        int result = a * b;
+        System.out.println("multiply result: " + result);
+        return result;
     }
-}
 
-class Dog extends Animal
-{
-    @Override
-    public void sound()
-    {
-        System.out.println("Dog barks");
+
+        // TODO: Write multiply(double a, double b)
+
+        public double multiply(double a,double b){
+            double result1 = a * b;
+            System.out.println("multiply result: " + result1);
+            return  result1;
+
+        }
     }
-}
 
-// TODO: Create Cat class that overrides sound()
+
+    class Animal {
+        public void sound() {
+            System.out.println("Animal makes a sound");
+        }
+    }
+
+    class Dog extends Animal {
+        @Override
+        public void sound() {
+            System.out.println("Dog barks");
+        }
+    }
+
+    // TODO: Create Cat class that overrides sound()
+    class Cat extends Animal {
+        @Override
+        public void sound() {
+            System.out.println("meow meow meowww");
+        }
+    }
+
