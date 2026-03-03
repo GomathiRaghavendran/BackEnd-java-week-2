@@ -1,8 +1,6 @@
 package school;
 
-//this is an example for learning about static
 public class SchoolDemo {
-
     public static void main(String[] args) {
         Student elena = new Student();
         Student gomati = new Student();
@@ -26,3 +24,7 @@ public class SchoolDemo {
 
     }
 }
+
+
+
+

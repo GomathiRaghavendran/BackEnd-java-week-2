@@ -13,6 +13,23 @@ public class Exercise1
     public static void main(String[] args)
     {
         // TODO: Create Book objects and test methods
+        book b=new book();
+        b.displayInfo("PowerofSubconciousmind","Dr.Joesphmurray");
+        System.out.println(b.title);
+        System.out.println(b.author);
+
     }
+}
+
+class book{
+    String title;
+    String author;
+
+   public void displayInfo(String title, String author){
+        this.title= title;
+        this.author=author;
+
+    }
+
 }
 

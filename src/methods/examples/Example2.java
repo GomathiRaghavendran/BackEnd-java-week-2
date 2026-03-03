@@ -1,7 +1,5 @@
 package methods.examples;
 
-import school.Student;
-
 /**
  * Example 2: Methods with Modifiers
  * - Access Modifiers: public, protected, default, private
